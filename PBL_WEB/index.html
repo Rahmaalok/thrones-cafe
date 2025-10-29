@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrones Cafe | Pengalaman Kopi Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="#" class="logo">Thrones<span>.</span></a>
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Cari menu atau produk...">
+                        <button id="search-btn" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div id="search-results" class="search-results"></div>
+                </div>
+            </div>
+            
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="welcome">Selamat Datang di</span>
+                <h1>Thrones Cafe</h1>
+                <p>Nikmati paduan sempurna kopi premium, suasana yang nyaman, dan pelayanan istimewa di Thrones Cafe. Singgasana Anda telah menanti.</p>
+                <a href="#menu" class="btn btn-primary">Lihat Menu Kami</a>
+            </div>
+            
+            <div class="hero-images">
+                <div class="image-box image-box-1">
+                    <img src="images/kopi throns.PNG" alt="Interior Throne Cafe dengan nuansa Indonesia modern">
+                </div>
+                <div class="image-box image-box-2">
+                    <img src="images/desk.jpg" alt="Barista menyeduh kopi Indonesia">
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="circle">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Cerita Kami</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Didirikan pada tahun 2015, Throne Cafe bermula dari sebuah mimpi sederhana untuk menciptakan ruang di mana para pecinta kopi dapat berkumpul, berkoneksi, dan menikmati seduhan terbaik dalam suasana yang elegan namun tetap ramah.</p>
+                    <p>Nama kami mencerminkan komitmen untuk memberikan pengalaman kopi yang berkelas, di mana setiap detail diperhatikan dengan cermat untuk membuat kunjungan Anda terasa istimewa. Dari biji kopi yang dipilih dengan etis hingga barista terampil kami, kami bangga dengan setiap cangkir yang kami sajikan.</p>
+                    <p>Kini, Throne Cafe terus menjadi destinasi favorit para pecinta kopi, menawarkan tempat yang nyaman untuk melepaskan diri dari kesibukan hidup sehari-hari.</p>
+                </div>
+                
+                <div class="about-image">
+                    <img src="images/about kopi.jpg" alt="Suasana khas coffee shop dengan sentuhan Indonesia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Menu Kami</h2>
+            
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="coffee">Kopi</button>
+                <button class="menu-tab" data-category="non-coffee">Non-Kopi</button>
+                <button class="menu-tab" data-category="food">Makanan & Kue</button>
+            </div>
+            
+            <!-- Coffee Menu -->
+            <div class="menu-categories active" id="coffee">
+                <h3 class="menu-category-title">Pilihan Kopi Premium</h3>
+                
+                <div class="menu-grid-elegant">
+                    <div class="menu-item-elegant" data-search="lounge elegance espresso kopi premium">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Lounge Elegance Espresso</h4>
+                            <span class="menu-item-price-elegant">Rp 35.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Rich and full-bodied, our signature espresso blend with notes of dark chocolate and toasted nuts.</p>
+                    </div>
+                    
+                    <div class="menu-item-elegant" data-search="velvet mocha delight kopi coklat">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Velvet Mocha Delight</h4>
+                            <span class="menu-item-price-elegant">Rp 42.500</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Silky mocha infused with a hint of vanilla, crowned with velvety whipped cream.</p>
+                    </div>
+                    
+                    <div class="menu-item-elegant" data-search="caramel macchiato symphony kopi susu">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Caramel Macchiato Symphony</h4>
+                            <span class="menu-item-price-elegant">Rp 40.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">A harmonious blend of espresso, steamed milk, and caramel drizzle.</p>
+                    </div>
+                    
+                    <div class="menu-item-elegant" data-search="hazelnut heaven latte kopi kacang">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Hazelnut Heaven Latte</h4>
+                            <span class="menu-item-price-elegant">Rp 40.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Creamy latte with the nutty goodness of hazelnut syrup.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Non-Coffee Menu -->
+            <div class="menu-categories" id="non-coffee">
+                <h3 class="menu-category-title">Pilihan Non-Kopi</h3>
+                
+                <div class="menu-grid-elegant">
+                    <div class="menu-item-elegant" data-search="thai tea teh thailand">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Thai Tea</h4>
+                            <span class="menu-item-price-elegant">Rp 25.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Authentic Thai tea with creamy texture and aromatic spices.</p>
+                    </div>
+                    
+                    <div class="menu-item-elegant" data-search="matcha latte teh hijau jepang">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Matcha Latte</h4>
+                            <span class="menu-item-price-elegant">Rp 30.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Premium Japanese matcha blended with creamy milk.</p>
+                    </div>
+                    
+                    <div class="menu-item-elegant" data-search="chocolate hazelnut coklat kacang">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Chocolate Hazelnut</h4>
+                            <span class="menu-item-price-elegant">Rp 28.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Rich chocolate combined with nutty hazelnut flavor.</p>
+                    </div>
+                    
+                    <div class="menu-item-elegant" data-search="lemon tea teh lemon segar">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Lemon Tea</h4>
+                            <span class="menu-item-price-elegant">Rp 22.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Refreshing lemon tea with perfect balance of sweet and tangy.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Food Menu -->
+            <div class="menu-categories" id="food">
+                <h3 class="menu-category-title">Makanan & Kue</h3>
+                
+                <div class="menu-grid-elegant">
+                    <div class="menu-item-elegant" data-search="croissant pastry prancis">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Croissant</h4>
+                            <span class="menu-item-price-elegant">Rp 20.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Buttery, flaky French croissant with golden layers.</p>
+                    </div>
+                    
+                    <div class="menu-item-elegant" data-search="sandwich roti isi">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Sandwich</h4>
+                            <span class="menu-item-price-elegant">Rp 35.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Fresh sandwich with premium ingredients and artisan bread.</p>
+                    </div>
+                    
+                    <div class="menu-item-elegant" data-search="muffin kue kecil">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Muffin</h4>
+                            <span class="menu-item-price-elegant">Rp 18.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Homemade muffin with various flavors, baked daily.</p>
+                    </div>
+                    
+                    <div class="menu-item-elegant" data-search="brownies coklat kue">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Brownies</h4>
+                            <span class="menu-item-price-elegant">Rp 15.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Rich, fudgy chocolate brownies with walnut pieces.</p>
+                    </div>
+                    
+                    <div class="menu-item-elegant" data-search="cheese cake kue keju">
+                        <div class="menu-item-header-elegant">
+                            <h4 class="menu-item-name-elegant">Cheese Cake</h4>
+                            <span class="menu-item-price-elegant">Rp 25.000</span>
+                        </div>
+                        <div class="menu-divider"></div>
+                        <p class="menu-item-description-elegant">Creamy New York style cheesecake with graham cracker crust.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeri Kami</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                     <img src="images/galeri 1.jpg" alt="Interior cafe">
+                </div>
+                <div class="gallery-item tall">
+                     <img src="images/galeri 2.jpg" alt="Barista sedang bekerja"> 
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galeri 3.jpg" alt="Minuman kopi"> 
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galeri 4.jpg" alt="Makanan dan kue"> 
+                </div>
+                <div class="gallery-item">
+                     <img src="images/galeri 5.jpg" alt="Suasana nyaman cafe"> 
+                </div>
+                <div class="gallery-item tall">
+                    <img src="images/galeri 6.jpg" alt="Pelayanan customer"> 
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galeri 7.jpg" alt="Minuman spesial">
+                </div> 
+                <div class="gallery-item tall">
+                    <img src="images/galeri 8.jpg" alt="Pelayanan customer"> 
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto 9.png" alt="Atmosfer cafe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Kunjungi Kami</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Lokasi</h3>
+                        <p>Jl. RE Martadinata No.18D</p>
+                        <p>Sungai Jawi Dalam, Pontianak</p>
+                        <p>Kalimantan Barat 78115</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Kontak</h3>
+                        <p><a href="mailto:thronescoffee455@gmail.com">thronescoffee455@gmail.com</a></p>
+                        <p><a href="tel:+62895337470175">+62 895-3374-70175</a></p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Jam Operasional</h3>
+                        <table class="hours-table">
+                            <tr>
+                                <td>Senin - Jumat</td>
+                                <td>07.00 - 22.00 WIB</td>
+                            </tr>
+                            <tr>
+                                <td>Sabtu & Minggu</td>
+                                <td>07.00 - 00.00 WIB</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.817165224514!2d109.315307!3d-0.014282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d58e8a7ff6fff%3A0x99069b79c3189e91!2sJl.%20RE%20Martadinata%20No.18D%2C%20Sungai%20Jawi%20Dalam%2C%20Kec.%20Pontianak%20Tim.%2C%20Kota%20Pontianak%2C%20Kalimantan%20Barat%2078115!5e0!3m2!1sen!2sid!4v1697367799842!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Thrones<span>.</span></div>
+            <p class="footer-text">Nikmati paduan sempurna kopi premium, suasana yang nyaman, dan pelayanan istimewa di Thrones Cafe. Singgasana Anda telah menanti.</p>
+            
+            <div class="social-icons">
+                <a href="https://www.instagram.com/share/BAL0mWIUcC" target="_blank" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/17CBzqSdQ1/?mibextid=wwXIfr" target="_blank" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/@kedaikopithrones?_t=ZS-90ZLgJTAx85&_r=1" target="_blank" class="social-icon tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            
+            <p class="copyright">© 2025 Thrones Cafe. Hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
